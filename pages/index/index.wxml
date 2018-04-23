@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<scroll-view scroll-y='true' class='container'>
+  <view class='search flex-wrp'>
+    <view class='search-left flex-item' style='flex-direction:row;'>
+      <image src='../../images/search.png'></image>
+      <input placeholder='搜索话题，问题或人' placeholder-class='search-placeholder'></input>
+    </view>
+    <view class='search-right flex-item' bindtap='upper'>
+      <image src='../../images/lighting.png'></image>
+    </view>
+  </view>
+
+  <view class='index-item' wx:for='{3}' bindtap='bindItemTap'>
+
+    <view class='index-souce'>
+      <image class='avatar' src='../../images/icon1.jpeg'></image>
+      <text class='title'>JJJ赞了回答1</text>
+      <image class='more' src='../../images/more.png'></image>
+    </view>
+
+    <view class='index-content'>
+      <a class='question'>
+        <text>如何评价周杰伦的稻香</text>
+      </a>
+      <view></view>
+      <view class='content'>
+        <text>请你打开电视看看，多少人为生命在努力勇敢的走下去\n请你打开电视看看，多少人为生命在努力勇敢的走下去</text>
+      </view>
+
+    </view>
+
+    <view class='answer-action'>
+      <view class='like dot'>
+        <a>10赞同</a>
+      </view>
+      <view class='comment dot'>
+        <a>18评论</a>
+      </view>
+      <view class='follow-it'>
+        <a>关注问题</a>
+      </view>
+    </view>
+
+  </view>
+
+</scroll-view>
