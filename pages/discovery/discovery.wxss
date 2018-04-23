@@ -1,2 +1,19 @@
+.top-tab{
+  background: #298DE5;
+  color: #8CCEFD;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0rpx 2rpx 2rpx #bebebe; /*阴影*/
+  margin: 0rpx 0rpx 8rpx 0rpx;
+  z-index: 9999; /*设置元素的堆叠顺序*/
+}
 
+.toptab.active{
+  color:#ffffff; 
+  border-bottom: solid 2px #ffffff;
+}
+
+.withtab{
+  margin: 105rpx 0rpx 0rpx 0rpx;
+}
 

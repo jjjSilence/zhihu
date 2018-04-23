@@ -1,23 +1,106 @@
-/**app.wxss**/
-
+/**app.wxss 公共样式**/
+/*最外层样式  */
 .container {
   height: 1500rpx;
 }
 
+/*flex 也叫弹性布局 水平方向 沾满整个容器高度*/
 .flex-wrp {
   display: flex;
   flex-direction: row;
   align-items: stretch;
 }
 
+/*item的比例 文字居中对齐  */
 .flex-item{
   flex-grow: 1;
   text-align: center;
 }
 
+/*flex-flow是flex-direction和flex-wrap形式的简写 
+水平对齐 不换行 每个item两侧间隔相等
+沾满整个容器高度  */
 .flex-tab{
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: stretch;
 }
 
+/*问题item  */
+.container .index-item {
+  width: 100%;
+  background-color: white;
+  padding: 20rpx 0rpx 0rpx 0rpx;
+  margin-bottom: 10rpx;
+}
+
+/*问题item 第一行view样式  */
+.container .index-item .index-souce {
+  padding: 0rpx 20rpx 10rpx 20rpx;
+}
+
+/*头像  */
+.container .index-item .index-souce .avatar {
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50rpx;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/*用户  */
+.container .index-item .index-souce .title {
+  display: inline-block;
+  height: 50rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  vertical-align: middle;
+  color: #a0acac;
+  margin-left: 10rpx;
+}
+
+/*更多  */
+.container .index-item .index-souce .more {
+  height: 50rpx;
+  width: 50rpx;
+  float: right;
+}
+
+/*问题item 第二行和第三行的内容样式  */
+.container .index-item .index-content {
+  padding: 0rpx 20rpx 0rpx 20rpx;
+}
+
+/*问题标题  */
+.container .index-item .index-content .question {
+  color: black;
+  font-size: 32rpx;
+  line-height: 40rpx;
+}
+
+/*回家简述  */
+.container .index-item .index-content .content {
+  color: #5b5b5b;
+  font-size: 26rpx;
+  line-height: 38rpx;
+  padding: 10rpx 0rpx 0rpx 0rpx;
+}
+
+/*问题item 最后一行反馈样式  */
+.container .index-item .answer-action{
+   padding: 0rpx 20rpx 20rpx 20rpx;
+}
+
+/*反馈相关字体样式  */
+.container .index-item  .answer-action view {
+  display: inline-block;
+  font-size: 26rpx;
+  color: #a0acac;
+  vertical-align: middle;
+}
+
+/*反馈的圆点  */
+.container .index-item  .answer-action .dot ::after {
+  content: '•';
+  padding: 0rpx 10rpx 0rpx 10rpx;
+}
