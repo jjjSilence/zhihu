@@ -40,3 +40,7 @@
   height: 375rpx;
 }
 
+.withtab{
+  margin: 0rpx 0rpx 0rpx 0rpx;
+}
+
