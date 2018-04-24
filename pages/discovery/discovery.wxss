@@ -25,23 +25,17 @@
   background: #F0F4F3;
 }
 
-/*下面可滚动部分  */
-/*注意：有空格是选择迭代器，表示.container下的.withtab  */
-.container .withtab{
-  margin: 135rpx 0rpx 0rpx 0rpx;
-}
-
+/*轮播图  */
 .activity{
   width: 750rpx;
   height: 375rpx;
 }
 
+/*轮播图下的图片  */
+/*注意：有空格是选择迭代器，表示.activity下的image  */
 .activity image{
   width: 750rpx;
   height: 375rpx;
 }
 
-.withtab{
-  margin: 0rpx 0rpx 0rpx 0rpx;
-}
 

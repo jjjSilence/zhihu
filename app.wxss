@@ -92,7 +92,7 @@
 }
 
 /*反馈相关字体样式  */
-.container .index-item  .answer-action view {
+.container .index-item .answer-action view {
   display: inline-block;
   font-size: 26rpx;
   color: #a0acac;
@@ -100,7 +100,7 @@
 }
 
 /*反馈的圆点  */
-.container .index-item  .answer-action .dot ::after {
+.container .index-item .answer-action .dot ::after {
   content: '•';
   padding: 0rpx 10rpx 0rpx 10rpx;
 }
