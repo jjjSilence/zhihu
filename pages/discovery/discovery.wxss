@@ -1,19 +1,42 @@
+/*顶部tab布局  rpx像素单位，完美解决适配问题*/
 .top-tab{
+  width: 750rpx; 
+  height: 100rpx;
   background: #298DE5;
   color: #8CCEFD;
   font-size: 28rpx;
   line-height: 100rpx;
   box-shadow: 0rpx 2rpx 2rpx #bebebe; /*阴影*/
-  margin: 0rpx 0rpx 8rpx 0rpx;
+  margin: 0rpx 0rpx 2rpx 0rpx;
   z-index: 9999; /*设置元素的堆叠顺序*/
 }
 
+/*选中样式 显示底部白色框  */
+/*注意：没有空格时改样式则响应  */
 .toptab.active{
   color:#ffffff; 
   border-bottom: solid 2px #ffffff;
 }
 
-.withtab{
-  margin: 105rpx 0rpx 0rpx 0rpx;
+/*底部滚动的高度  */
+.container{
+  height: 1500rpx;
+  background: #F0F4F3;
+}
+
+/*下面可滚动部分  */
+/*注意：有空格是选择迭代器，表示.container下的.withtab  */
+.container .withtab{
+  margin: 135rpx 0rpx 0rpx 0rpx;
+}
+
+.activity{
+  width: 750rpx;
+  height: 375rpx;
+}
+
+.activity image{
+  width: 750rpx;
+  height: 375rpx;
 }
 

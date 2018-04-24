@@ -4,7 +4,7 @@
   </view>
 </view>
 
-<scroll-view scroll-y='true' class='container discovery withtab' bindscrolltoupper='upper' bindscrolltolower='lower' scroll-into-view='{{toView}}' scroll-top='{{scrollTop}}'>
+<scroll-view scroll-y='true' class='container withtab' bindscrolltoupper='upper' bindscrolltolower='lower' scroll-into-view='{{toView}}' scroll-top='{{scrollTop}}'>
 
   <view class='ctnt0'>
 
@@ -22,7 +22,6 @@
       <view class='index-souce'>
         <image class='avatar' src='../../images/icon1.jpeg'></image>
         <text class='title'>JJJ赞了回答1</text>
-        <image class='more' src='../../images/more.png'></image>
       </view>
 
       <view class='index-content'>
