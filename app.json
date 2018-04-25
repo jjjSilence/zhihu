@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/market/market",
     "pages/discovery/discovery",
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -18,10 +18,10 @@
     "borderStyle":"white",
     "list": [
       {
-        "text": "想法",
-        "pagePath": "pages/discovery/discovery",
-        "iconPath": "images/discovery.png",
-        "selectedIconPath": "images/discovery_focus.png"
+        "text": "市场",
+        "pagePath": "pages/market/market",
+        "iconPath": "images/ring.png",
+        "selectedIconPath": "images/ring_focus.png"
       },
       {
         "text": "首页",
@@ -30,10 +30,10 @@
         "selectedIconPath": "images/index_focus.png"
       },
       {
-        "text": "市场",
-        "pagePath": "pages/index/index",
-        "iconPath": "images/ring.png",
-        "selectedIconPath": "images/ring_focus.png"
+        "text": "想法",
+        "pagePath": "pages/discovery/discovery",
+        "iconPath": "images/discovery.png",
+        "selectedIconPath": "images/discovery_focus.png"
       },
       {
         "text": "消息",

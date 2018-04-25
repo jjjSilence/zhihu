@@ -1,8 +1,6 @@
 /**index.wxss**/
-
 .container {
   height: 1500rpx;
-  background-color: #F0F4F3;
 }
 
 .container .search {

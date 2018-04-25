@@ -1,7 +1,11 @@
 /**app.wxss 公共样式**/
+
 /*最外层样式  */
 .container {
-  height: 1500rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #F0F4F3;
 }
 
 /*flex 也叫弹性布局 水平方向 沾满整个容器高度*/
@@ -103,4 +107,29 @@
 .container .index-item .answer-action .dot ::after {
   content: '•';
   padding: 0rpx 10rpx 0rpx 10rpx;
+}
+
+/*顶部tab布局  rpx像素单位，完美解决适配问题*/
+.top-tab{
+  width: 750rpx; 
+  height: 100rpx;
+  background: #298DE5;
+  color: #8CCEFD;
+  font-size: 28rpx;
+  line-height: 100rpx;
+  box-shadow: 0rpx 2rpx 2rpx #bebebe; /*阴影*/
+  margin: 0rpx 0rpx 2rpx 0rpx;
+  z-index: 9999; /*设置元素的堆叠顺序*/
+  position: fixed; /*固定定位 会固定一个位置不动*/
+}
+
+/*选中样式 显示底部白色框  */
+/*注意：没有空格时改样式则响应  */
+.toptab.active{
+  color:#ffffff; 
+  border-bottom: solid 2px #ffffff;
+}
+
+.container.withtab{
+  padding: 102rpx 0 0 0;
 }

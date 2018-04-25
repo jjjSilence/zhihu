@@ -1,21 +1,19 @@
 <view class='top-tab flex-wrp flex-tab'>
-  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}"  wx:for='{{navTab}}' wx:for-index='idx' wx:for-item='itemName' data-idx='{{idx}}' bindtap='switchTab'>
+  <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for='{{navTab}}' wx:for-index='idx' wx:for-item='itemName' data-idx='{{idx}}' bindtap='switchTab'>
     {{itemName+idx}}
   </view>
 </view>
 
-<scroll-view scroll-y='true' class='container' bindscrolltoupper='upper' bindscrolltolower='lower' scroll-into-view='{{toView}}' scroll-top='{{scrollTop}}'>
+<scroll-view scroll-y='true' class='container withtab' bindscrolltoupper='upper' bindscrolltolower='lower' scroll-into-view='{{toView}}' scroll-top='{{scrollTop}}'>
 
-  <view class='ctnt0'>
-
-    <swiper class='activity' indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}'>
+  <view class='ctnt0' hidden='{{currentNavtab==0 ? false : true}}'>
+    <swiper class='activity' indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' circular='{{circular}}'>
       <block wx:for='{{imgUrls}}'>
         <swiper-item>
           <image src='{{item}}' class='slide-image'></image>
         </swiper-item>
       </block>
     </swiper>
-
 
     <view class='index-item' wx:for='{3}' bindtap='bindItemTap'>
 
@@ -49,5 +47,17 @@
 
     </view>
 
+  </view>
+
+  <view class='ctnt1 placehold' hidden='{{currentNavtab==1 ? false : true}}'>
+    <text>圆桌</text>
+  </view>
+
+  <view class='ctnt2 placehold' hidden='{{currentNavtab==2 ? false : true}}'>
+    <text>热门</text>
+  </view>
+
+  <view class='ctnt3 placehold' hidden='{{currentNavtab==3 ? false : true}}'>
+    <text>收藏</text>
   </view>
 </scroll-view>

@@ -1,0 +1,12 @@
+<!--pages/market/market.wxml-->
+<view class='top-tab flex-wrp'>
+  <view class="toptab flex-item {{currentTab==idx? 'active':'' }}" wx:for='{{navTab}}' wx:for-item='itemName' wx:for-index='idx'>
+    {{itemName+idx}}
+  </view>
+</view>
+
+<scroll-view class='container withtab'>
+
+
+
+</scroll-view>

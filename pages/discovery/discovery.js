@@ -7,9 +7,10 @@ Page({
       '../../images/24280.jpg',
       '../../images/1444983318907-_DSC1826.jpg'
     ],
-    indicatorDots: false,
+    indicatorDots: true,
+    circular:true,
     autoplay: true,
-    interval: 5000,
+    interval: 3000,
     duration: 1000
   },
   switchTab: function (e) {
