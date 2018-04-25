@@ -82,7 +82,7 @@
   line-height: 40rpx;
 }
 
-/*回家简述  */
+/*回答简述  */
 .container .index-item .index-content .content {
   color: #5b5b5b;
   font-size: 26rpx;
@@ -130,6 +130,7 @@
   border-bottom: solid 2px #ffffff;
 }
 
+/*tab框下的控件  */
 .container.withtab{
   padding: 102rpx 0 0 0;
 }
